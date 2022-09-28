@@ -4,6 +4,9 @@ module.exports = {
   content: ["./*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+        body: ['Ubuntu']
+      },
       colors: {
         primary: '#C4A78B',
         danger: '#1B1A1B',
