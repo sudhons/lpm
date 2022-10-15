@@ -1,3 +1,4 @@
+const dotenv = require("dotenv")
 const express = require("express")
 const ejs = require("ejs")
 const https = require("https")
@@ -7,7 +8,9 @@ const bodyParser = require("body-parser")
 const port = 8000
 const app = express();
 
-mongoose.connect("mongodb://localhost:27017/waitlistDB")
+dotenv.config();
+
+mongoose.connect(`mongodb+srv://waitlistDB:${process.env.DB_PASSWORD}@cluster0.htkdwba.mongodb.net/waitlistDB`)
 
 const emailSchema = new Schema({
     email: String
