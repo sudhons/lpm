@@ -1,10 +1,13 @@
 {
-  "name": "waitlist-product",
+  "name": "loveplaymusic",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "homepage": "https://loveplaymusic.com",
   "scripts": {
-    "build-css": "tailwindcss build -i ./src/input.css -o ./public/css/output.css --watch"
+     "dev": "node server.js",
+    "build-css": "tailwindcss build -i ./src/input.css -o ./public/css/output.css --watch",
+    "start": "NODE_ENV=production node server.js"
   },
   "keywords": [],
   "author": "",
